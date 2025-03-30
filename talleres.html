@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres de Manos al Barro</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- importo las fuentes de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="nav">
+            <div class="menu-responsive"> <!-- Menu que solo se vera en tablet y movil -->
+                <div class="menu-icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 19H53M11 32H53M11 45H53" stroke="#ECEBDF" stroke-width="6"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <ul class="nav-bar" id="navBar">
+                    <li class="home"> <a href="index.html" aria-label="Volver a la página inicio.">
+                            <svg width="60" height="60" viewBox="0 0 87 87" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M43.5 20.6263L61.625 36.9387V65.25H54.375V43.5H32.625V65.25H25.375V36.9387L43.5 20.6263ZM43.5 10.875L7.25 43.5H18.125V72.5H39.875V50.75H47.125V72.5H68.875V43.5H79.75L43.5 10.875Z"
+                                    fill="#ECEBDF" />
+                            </svg>
+                        </a></li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="talleres.html" class="pag-activa generic">TALLERES</a></li>
+                    <li><a href="talleres.html#contacto">CONTACTO</a></li>
+
+                </ul>
+            </div>
+            <form class="search">
+
+                <button type="submit" aria-label="Buscar">
+                    <!-- copio el boton de figma en svg-->
+                    <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.625 0C18.5038 0 22.2237 1.42671 24.9664 3.96626C27.7092 6.50582 29.25 9.95019 29.25 13.5417C29.25 16.8958 27.9225 19.9792 25.74 22.3542L26.3475 22.9167H28.125L39.375 33.3333L36 36.4583L24.75 26.0417V24.3958L24.1425 23.8333C21.5775 25.8542 18.2475 27.0833 14.625 27.0833C10.7462 27.0833 7.02628 25.6566 4.28356 23.1171C1.54084 20.5775 0 17.1331 0 13.5417C0 9.95019 1.54084 6.50582 4.28356 3.96626C7.02628 1.42671 10.7462 0 14.625 0ZM14.625 4.16667C9 4.16667 4.5 8.33333 4.5 13.5417C4.5 18.75 9 22.9167 14.625 22.9167C20.25 22.9167 24.75 18.75 24.75 13.5417C24.75 8.33333 20.25 4.16667 14.625 4.16667Z"
+                            fill="#FDFCFB" />
+                    </svg>
+
+                </button>
+                <input type="text" placeholder="buscar..." class="generic" aria-label="texto a buscar">
+            </form>
+        </nav>
+
+        <div class="header-content">
+
+            <div class="titulo">
+                <h1>MANOS AL BARRO <br> Talleres y cursos</h1>
+            </div>
+            <img src="img/logo2.png" class="logo" alt="Logo de Manos al Barro">
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="section2 sectTall">
+            <div class="subsection2">
+                <h2>TALLERES</h2>
+            </div>
+            <div class="cards-container">
+                <div class="item">
+                    <h2>PRINCIPIANTE</h2>
+                    <img src="img/principiante.png" alt="Persona trabajando en torno">
+                    <p><a href="talleres/principiante.html" class="generic">Más información</a></p>
+                </div>
+                <div class="item">
+                    <h2>ESMALTADO</h2>
+                    <img src="img/esmaltado.png" alt="Piezas esmaltadas">
+                    <p><a href="talleres/esmaltado.html" class="generic">Más información</a></p>
+                </div>
+                <div class="item">
+                    <h2>MOSAICO</h2>
+                    <img src="img/mosaico.png" alt="Piezas de mosaico">
+                    <p><a href="talleres/mosaico.html" class="generic">Más información</a></p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section1 sectYou">
+            <div class="subsection">
+                <h2>VIDEOTUTORIALES</h2>
+                <p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                    aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos
+                    himenaeos.</p>
+            </div>
+
+            <a href="https://youtu.be/YyMqXecm8NU" target="_blank" class="video"
+                aria-label="tutorial del canal de Youtube">
+                <iframe width="400" height="225" style="border-radius: 10px"
+                    src="https://www.youtube.com/embed/YyMqXecm8NU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </a>
+        </section>
+
+        <section class="formulario" aria-labelledby="form-title">
+
+            <div class="titleForm">
+                <h2>SOLICITA INFORMACIÓN</h2>
+            </div>
+
+            <div>
+                <form class="row g-3 form needs-validation" novalidate id="inscripcion"
+                    aria-label="Formulario de solicitud de información.">
+                    <div class="col-lg-6 col-md-12">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" required aria-required="true">
+                        <div class="invalid-feedback">Tienes que introducir un nombre.</div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@email.com" required
+                            aria-required="true" data-bs-toggle="popover" data-bs-placement="right"
+                            data-bs-trigger="hover focus" data-bs-content="Si no tienes email pon vacio@vacio">
+                        <div class="invalid-feedback">Tienes que introducir un email válido.</div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="phone" required aria-required="true"
+                            data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover focus"
+                            data-bs-content="Teléfono fijo o móvil.">
+                        <div class="invalid-feedback">Tienes que introducir un teléfono.</div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <label for="taller" class="form-label">Curso de interés</label>
+                        <select class="form-select" required aria-required="true">
+                            <option value="" selected disabled>Cursos disponibles</option>
+                            <!-- selected disabled es para que no se pueda "seleccionar" esta opcion, que no sea válida -->
+                            <option value="principiante">Principiante</option>
+                            <option value="esmaltado">Esmaltado</option>
+                            <option value="mosaico">Mosaico</option>
+                            <option value="avanzado">Avanzado</option>
+                        </select>
+                    </div>
+                    <div class="invalid-feedback">Selecciona el curso que te interesa.</div>
+                    <div class=" col-md-10">
+                        <label for="comentarios" class="form-label">Comentarios:</label>
+                        <textarea class="form-control" placeholder="Escribe tus comentarios aqui..."
+                            data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover focus"
+                            data-bs-content="Cualquier duda, comentario, pregunta,..."></textarea>
+                    </div>
+                    <div class=" col-md-12 form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required
+                            aria-required="true" data-bs-toggle="popover" data-bs-placement="bottom"
+                            data-bs-trigger="hover focus" data-bs-content="Debes aceptar para poder enviar.">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Acepto los términos y condiciones.
+                        </label>
+                        <div class="invalid-feedback">Debes aceptar los términos</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary generic" id="botonFormulario"
+                        aria-label="Enviar formulario">Enviar</button>
+
+
+                    <!-- Modal Bootstrap 5.3 https://getbootstrap.com/docs/5.3/components/modal/ -->
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="confirmacionFormulario"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="confirmacionFormulario">Confirmación de Envío</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¿Deseas enviar el formulario?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary generic"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" id="confirmarEnvio"
+                                        class="btn btn-primary generic">Enviar</button>
+                                    <!-- cambio el tipo a submit para que se envie -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="social-networks">
+            <ul>
+                <li><a href="https://www.youtube.com/@sararamosperez"
+                        aria-label="acceso al canal de Youtube de la tienda"><svg width="55" height="39"
+                            viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M53.8126 5.93105C53.494 4.78966 52.8864 3.74974 52.0485 2.91182C51.2106 2.07389 50.1707 1.46629 49.0293 1.14775C44.7454 3.29074e-05 27.5045 3.2497e-05 27.5045 3.2497e-05C27.5045 3.2497e-05 10.307 -0.0228756 5.97962 1.14775C4.83823 1.46629 3.79831 2.07389 2.96039 2.91182C2.12246 3.74974 1.51486 4.78966 1.19632 5.93105C0.38426 10.3169 -0.0160897 14.7691 0.000494806 19.2294C-0.0129545 23.673 0.387382 28.1081 1.19632 32.4774C1.51486 33.6188 2.12246 34.6587 2.96039 35.4967C3.79831 36.3346 4.83823 36.9422 5.97962 37.2607C10.2589 38.4107 27.5045 38.4107 27.5045 38.4107C27.5045 38.4107 44.6996 38.4107 49.0293 37.2607C50.1707 36.9422 51.2106 36.3346 52.0485 35.4967C52.8864 34.6587 53.494 33.6188 53.8126 32.4774C54.6046 28.1065 54.9881 23.6714 54.958 19.2294C54.9912 14.7706 54.6077 10.3185 53.8126 5.93105ZM22.0018 27.4559V10.9778L36.3517 19.2294L22.0018 27.4559Z"
+                                fill="#FDFCFB" />
+                        </svg>
+                    </a></li>
+                <li><a href="https://www.facebook.com" aria-label="acceso a la página Facebook de la tienda"><svg
+                            width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M54.96 27.4801C54.96 12.3032 42.6569 0 27.4801 0C12.3032 0 0 12.3032 0 27.4801C0 41.1962 10.0491 52.5647 23.1863 54.6263V35.4236H16.2089V27.4801H23.1863V21.4259C23.1863 14.5387 27.2889 10.7344 33.5658 10.7344C36.5724 10.7344 39.7172 11.2711 39.7172 11.2711V18.0338H36.2522C32.8385 18.0338 31.7737 20.1521 31.7737 22.3252V27.4801H39.3952L38.1769 35.4236H31.7737V54.6263C44.9111 52.5647 54.96 41.1962 54.96 27.4801Z"
+                                fill="#FDFCFB" />
+                        </svg>
+                    </a></li>
+                <li><a href="https://www.instagram.com" aria-label="acceso a la página Instagram de la tienda."><svg
+                            width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M27.48 0C20.0146 0 19.0826 0.03435 16.1514 0.16488C13.2247 0.30228 11.2324 0.76257 9.4806 1.4427C7.67379 2.14344 6.13949 3.08463 4.61206 4.61206C3.08463 6.13949 2.14115 7.6715 1.4427 9.4806C0.76257 11.2324 0.29999 13.2247 0.16488 16.1514C0.02748 19.0826 0 20.0146 0 27.48C0 34.9454 0.03435 35.8774 0.16488 38.8086C0.30228 41.733 0.76257 43.7276 1.4427 45.4794C2.14344 47.2839 3.08463 48.8205 4.61206 50.3479C6.13949 51.8731 7.6715 52.8189 9.4806 53.5173C11.2347 54.1951 13.227 54.66 16.1514 54.7951C19.0826 54.9325 20.0146 54.96 27.48 54.96C34.9454 54.96 35.8774 54.9256 38.8086 54.7951C41.733 54.6577 43.7276 54.1951 45.4794 53.5173C47.2839 52.8166 48.8205 51.8731 50.3479 50.3479C51.8731 48.8205 52.8189 47.2908 53.5173 45.4794C54.1951 43.7276 54.66 41.733 54.7951 38.8086C54.9325 35.8774 54.96 34.9454 54.96 27.48C54.96 20.0146 54.9256 19.0826 54.7951 16.1514C54.6577 13.227 54.1951 11.2302 53.5173 9.4806C52.8166 7.67379 51.8731 6.13949 50.3479 4.61206C48.8205 3.08463 47.2908 2.14115 45.4794 1.4427C43.7276 0.76257 41.733 0.29999 38.8086 0.16488C35.8774 0.02748 34.9454 0 27.48 0ZM27.48 4.9464C34.8149 4.9464 35.6897 4.98304 38.5865 5.10899C41.2658 5.23494 42.7199 5.6792 43.6863 6.05934C44.9733 6.55627 45.8847 7.15167 46.8511 8.11118C47.8106 9.07298 48.406 9.98669 48.9029 11.2737C49.2785 12.24 49.7273 13.6942 49.8487 16.3735C49.9792 19.2726 50.009 20.1428 50.009 27.48C50.009 34.8172 49.9747 35.6897 49.8396 38.5865C49.6999 41.2658 49.2533 42.7199 48.8755 43.6863C48.3625 44.9733 47.7786 45.8847 46.8168 46.8511C45.8573 47.8106 44.9298 48.406 43.6566 48.9029C42.6948 49.2785 41.2177 49.7273 38.5384 49.8487C35.6209 49.9792 34.7622 50.009 27.4113 50.009C20.0581 50.009 19.1994 49.9747 16.2842 49.8396C13.6026 49.6999 12.1255 49.2533 11.1637 48.8755C9.86074 48.3625 8.96535 47.7786 8.00584 46.8168C7.04175 45.8573 6.42574 44.9298 5.94484 43.6566C5.56699 42.6948 5.12273 41.2177 4.98304 38.5384C4.87999 35.653 4.84335 34.7622 4.84335 27.4456C4.84335 20.1268 4.87999 19.2337 4.98304 16.314C5.12273 13.6347 5.56699 12.1599 5.94484 11.1981C6.42574 9.8928 7.04175 8.9997 8.00584 8.03561C8.96535 7.0761 9.86074 6.4578 11.1637 5.97919C12.1255 5.59905 13.5705 5.1525 16.2498 5.0151C19.1696 4.91205 20.0283 4.8777 27.3769 4.8777L27.48 4.9464ZM27.48 13.369C19.6826 13.369 13.369 19.6894 13.369 27.48C13.369 35.2775 19.6894 41.591 27.48 41.591C35.2775 41.591 41.591 35.2706 41.591 27.48C41.591 19.6826 35.2706 13.369 27.48 13.369ZM27.48 36.64C22.4191 36.64 18.32 32.5409 18.32 27.48C18.32 22.4191 22.4191 18.32 27.48 18.32C32.5409 18.32 36.64 22.4191 36.64 27.48C36.64 32.5409 32.5409 36.64 27.48 36.64ZM45.4473 12.8125C45.4473 14.6331 43.968 16.1101 42.1497 16.1101C40.3292 16.1101 38.8521 14.6308 38.8521 12.8125C38.8521 10.9943 40.3315 9.51724 42.1497 9.51724C43.9657 9.51495 45.4473 10.9943 45.4473 12.8125Z"
+                                fill="#FDFCFB" />
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="legal-info">
+            <ul>
+                <li><a href=#>Aviso legal</a></li>
+                <li><a href=#>Política de cookies</a></li>
+                <li><a href=#>Política de privacidad</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-help">
+            <p><a href="ayuda.html">AYUDA</a></p>
+            <p><a href="talleres.html#contacto" class="generic">CONTACTO</a></p>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        //codigo adaptado de los apuntes
+        function myFunction() {
+            var x = document.getElementById("navBar");
+            if (x.classList.contains("responsive")) {
+                x.classList.remove("responsive");
+            } else {
+                x.classList.add("responsive");
+            }
+        }
+
+
+        //documentacion de bootstrap, codigo para validacion
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+            const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+
+
+            // Loop over them and prevent submission
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation();
+                    } else {     //añado el else en el que evita que se envie el formulario y se abre el modal
+                        event.preventDefault();
+                        modal.show();
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+
+            //añado el envio desde el boton del modal
+            document.getElementById('confirmarEnvio').addEventListener("click", () => {
+                inscripcion.submit();
+            })
+        })()
+
+        //script para popovers
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+
+    </script>
+</body>
+
+</html>

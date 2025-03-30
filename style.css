@@ -1,0 +1,673 @@
+/*============================*/
+/*ESTILOS GENERALES */
+/*============================*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  margin: 0; /* resteo los margenes y paddings predeterminados */
+  padding: 0;
+}
+p {
+  font-size: 24px;
+  margin-top: 2vw;
+}
+a {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #596053;
+  display: inline-block; /*asi evito que ocupe todo el ancho */
+}
+
+h1 {
+  font-size: 90px;
+  font-family: "Libre Bodoni", serif;
+  font-weight: 400;
+  margin: 4vw;
+}
+
+li {
+  list-style-type: none; /* le quito los estilos de lista */
+}
+
+/*============================*/
+/* GENERICO, REUTILIZABLE*/
+/*============================*/
+
+.generic {
+  border: 2px solid #fdfcfb;
+  background-color: #fdfcfb;
+  padding: 5px 15px;
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+}
+/*============================*/
+/* CABECERA */
+/*============================*/
+
+header {
+  background-color: #596053;
+  color: #fdfcfb;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between; /*para colocar cada uno de los elementos en los extremos*/
+  align-items: center; /*esto alinea los hijos en el centro verticalmente*/
+  width: 100%;
+  padding: 1vw;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  /*menu que solo se vera en tablet y movil, sin funcionalidad */
+  display: none;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 0 10px;
+  width: 100px;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: #fdfcfb;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.pag-activa {
+  color: #596053 !important;
+}
+
+a:hover {
+  color: #f7a07d !important;
+}
+
+a:hover svg path {
+  fill: #f7a07d;
+}
+button:hover svg path {
+  fill: #f7a07d;
+}
+
+.search button {
+  background-color: #596053;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.search input::placeholder {
+  /* letra del recuadro de la busqueda */
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+}
+.search input.generic {
+  height: 25px;
+  width: 125px;
+  margin-right: 4vw;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(img/header.jpg); /*con esto oscurezco un poco la foto*/
+  background-size: cover;
+  background-position: left;
+  min-height: 600px;
+  filter: brightness(0.9);
+}
+
+.titulo {
+  align-self: self-end; /*lo centra en el contenedor padre, en el eje vertical*/
+  margin: 4vw;
+}
+
+.logo {
+  align-self: flex-start;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  width: 150px;
+}
+
+/*============================*/
+/* SECCIONES */
+/*============================*/
+
+.section1 {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #dad9cb;
+  padding: 40px;
+  align-items: center;
+}
+.subsection {
+  margin: 4vw;
+  flex: 0 1 60%;
+}
+.subsection p {
+  max-width: 70%;
+  margin-bottom: 2vw;
+}
+.subsection2 {
+  padding: 6vw 4vw;
+}
+
+.info-tall {
+  display: flex;
+  gap: 40px;
+  width: 70%;
+}
+
+.section1 img {
+  max-width: 100%;
+  flex: 0 1 40%;
+  margin-right: 40px;
+  min-width: 190px;
+}
+
+.section1 a.generic {
+  border: 2px solid #596053;
+  background-color: #596053;
+  align-self: center;
+  color: #fdfcfb;
+}
+
+.section2 {
+  padding: 2vw 2vw;
+  background-color: #596053;
+}
+
+.section2 h2 {
+  color: #596053;
+}
+
+.sectTall {
+  padding: 6vw;
+  background-color: #dad9cb;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 3vw;
+}
+.item {
+  display: flex;
+  flex-direction: column; /* para colocar los elementos en columna no en fila */
+  align-items: center; /*para centrar los elementos en la card*/
+  text-align: center; /*con esto centro el texto en las cards*/
+  width: 300px;
+  padding: 20px 5px;
+  flex: 0 1 300px;
+  gap: 10px;
+  background-color: #dad9cb;
+  border-radius: 15px;
+}
+
+.section2 a.generic {
+  border: 2px solid #596053;
+  background-color: #596053;
+  color: #fdfcfb;
+}
+
+.sectTall a.generic {
+  border: 2px solid #fdfcfb;
+  background-color: #fdfcfb;
+  color: #596053;
+}
+
+.sectTall .item {
+  background-color: #596053;
+}
+
+.sectTall .item h2 {
+  color: #fdfcfb;
+}
+
+.section1 video {
+  display: flex;
+  max-width: 80%;
+  flex: 0 1 40%;
+  margin-right: 40px;
+  min-width: 190px;
+  border-radius: 15px;
+}
+.sectYou {
+  display: flex;
+  background-color: #596053;
+  padding: 5vw;
+}
+.sectYou h2 {
+  color: #fdfcfb;
+}
+.sectYou p {
+  color: #fdfcfb;
+}
+
+/*============================*/
+/* FORMULARIO DE PAGINA TALLERES */
+/*============================*/
+
+.formulario {
+  padding: 6vw 10vw;
+  background-color: #dad9cb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  /* display: flex; */
+  background-color: #596053;
+  padding: 5%;
+  width: 60%;
+  min-width: 300px;
+  margin: 2vw auto;
+}
+
+.form label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fdfcfb;
+}
+
+.btn:hover {
+  color: #f7a07d;
+  background-color: #fdfcfb;
+  border-color: #fdfcfb;
+}
+.form-control:focus {
+  border-color: #f7a07d;
+  border-width: 2px;
+  box-shadow: none;
+}
+.form-control {
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.form-select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.form button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #596053;
+  cursor: pointer;
+  display: block;
+  margin: 1vw auto 0;
+}
+.form-check-input:checked {
+  background-color: #f7a07d;
+  border-color: #f7a07d;
+  box-shadow: none;
+}
+.form-check-input:focus {
+  box-shadow: none;
+  border-color: #f7a07d;
+  border-width: 3px;
+}
+
+.enviar:hover {
+  color: #f7a07d !important;
+}
+
+.invalid-feedback {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-width: 4px;
+}
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-width: 4px;
+}
+
+.form-select.is-invalid,
+.was-validated .form-select:invalid {
+  border-width: 3px; /* Grosor del borde */
+}
+
+.btn-primary {
+  --bs-btn-hover-border-color: #f7a07d;
+  --bs-btn-border-color: #f7a07d;
+  --bs-btn-active-border-color: #f7a07d;
+  --bs-btn-active-bg: #f7a07d;
+}
+
+/*============================*/
+/* FOOTER */
+/*============================*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #596053;
+  padding: 10px;
+}
+
+.social-networks {
+  display: flex;
+  flex: 1;
+  max-width: 33%;
+  justify-content: center; /*los centra horizontalmente en su contenedor*/
+}
+
+.social-networks ul {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center; /*los centra verticalmente*/
+}
+
+.legal-info {
+  display: flex;
+  flex: 1.5;
+  max-width: 33%;
+  justify-content: center;
+  text-align: center;
+}
+.legal-info a {
+  font-size: 24px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #ecebdf;
+  margin-top: 20px;
+}
+.footer-help {
+  display: flex;
+  flex: 1;
+  max-width: 33%;
+  justify-content: center;
+  gap: 2vw;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer-help a {
+  color: #fdfcfb;
+}
+.footer-help a.generic {
+  color: #596053;
+}
+
+/*============================*/
+/* ESTILOS PARA EL MODAL */
+/*============================*/
+
+.modal .generic {
+  border: 2px solid #596053;
+  background-color: #596053;
+  align-self: center;
+  color: #fdfcfb;
+}
+.modal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #596053;
+  font-weight: 600;
+}
+.modal-header {
+  background-color: #596053;
+  color: #ecebdf;
+  padding: 10px 20px;
+}
+.modal-header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px !important;
+  margin: 1vw;
+}
+.modal button:hover {
+  color: #f7a07d;
+}
+
+/*============================*/
+/* ESTILOS PARA EL CARRUSEL */
+/*============================*/
+.card {
+  align-items: center;
+  padding: 10px 0px;
+  background-color: #ecebdf;
+  max-width: 300px;
+  min-width: 200px;
+  margin: 0px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  top: -50px;
+  bottom: auto;
+  color: #fdfcfb;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #f7a07d;
+}
+.col-md-4 {
+  max-width: 300px; /* limito el ancho de las columnas porque en pantalla grande seguia sin verse centrado */
+}
+.card h4 {
+  color: #596053;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*============================*/
+/* MEDIA QUERY PARA ESCRITORIOS PEQUEÑOS */
+/*============================*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1380px) {
+  .nav-bar a {
+    font-size: 24px;
+  }
+  .search input {
+    display: none;
+  }
+  /*   .form {
+    min-width: 60%;
+  }  */
+}
+
+/*============================*/
+/* MEDIA QUERY PARA TABLETS */
+/*============================*/
+
+@media only screen and (max-width: 1024px) and (min-width: 766px) {
+  h1 {
+    font-size: 60px;
+  }
+  .header-content {
+    min-height: 500px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 1vw;
+    gap: 50px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .home {
+    position: absolute;
+    left: 20px;
+  }
+
+  .search input {
+    display: none; /* Oculto el input de la barra de la navegacion*/
+  }
+
+  .item {
+    flex: 1 1 calc(50% - 20px); /*aqui especifico 2 cards por fila */
+    max-width: 300px;
+    /*   max-width: 45%; */
+  }
+  iframe {
+    width: 300px;
+    height: auto;
+  }
+  /*   .form {
+    min-width: 60%;
+  } */
+  .footer-help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+/*============================*/
+/* MEDIA QUERY PARA MOVILES */
+/*============================*/
+
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  .nav-bar a {
+    padding: 0px 10px;
+  }
+  /* Oculta la barra de navegacion excepto el boton con clase home*/
+  .nav-bar li:not(.home) {
+    display: none;
+  }
+  /* Muestra la barra al hacer click, porque tiene la clase .responsive */
+  .nav-bar.responsive li:not(.home) {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  /* La página activa tiene mas margen para quedar alineado*/
+  .nav-bar.responsive .pag-activa {
+    margin-left: 20px;
+  }
+  .search input {
+    display: none;
+  }
+
+  /* Menu hamburguesa que esta oculto en version escritorio y tablet  */
+  .menu-icon {
+    float: right;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-bar.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .nav-bar.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  /* Coloco a mano la barra de navegacion para que este fija */
+  .search {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .header-content {
+    background-position: center;
+    height: 300px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .section1 {
+    flex-direction: column; /*para poner todo en vertical*/
+    justify-content: center;
+  }
+  .section1 picture {
+    order: -1; /*Asi pongo la imagen en orden por encima del resto de elementos*/
+  }
+  .info-tall {
+    flex-direction: column;
+  }
+  .item {
+    flex: 1 1 100%; /*para que solo aparezca una card en cada fila*/
+    max-width: 80%;
+  }
+  .video {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+  }
+  .sectYou {
+    flex-direction: column;
+    align-items: center;
+  }
+  iframe {
+    width: 250px;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-help {
+    flex-direction: column;
+    order: -1;
+  }
+  .legal-info {
+    max-width: 80%; /*cambio el tamaño porque estaba a 33 del modo escritorio */
+  }
+  .social-networks {
+    order: 1;
+  }
+}
