@@ -125,7 +125,7 @@ button:hover svg path {
 .header-content {
   display: flex;
   justify-content: space-between;
-  background-image: url(img/header.jpg); /*con esto oscurezco un poco la foto*/
+  background-image: url(img/header.webp); /*con esto oscurezco un poco la foto*/
   background-size: cover;
   background-position: left;
   min-height: 600px;
