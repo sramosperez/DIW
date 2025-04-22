@@ -241,14 +241,15 @@ button:hover svg path {
   color: #fdfcfb;
 }
 
-.section1 video {
+/* .section1 video {
   display: flex;
   max-width: 80%;
   flex: 0 1 40%;
   margin-right: 40px;
   min-width: 190px;
   border-radius: 15px;
-}
+} */
+
 .sectYou {
   display: flex;
   background-color: #596053;
@@ -261,6 +262,11 @@ button:hover svg path {
   color: #fdfcfb;
 }
 
+.video-talleres{
+  width:80vw;
+  height:auto;
+  margin:auto;
+}
 /*============================*/
 /* FORMULARIO DE PAGINA TALLERES */
 /*============================*/
