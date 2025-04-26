@@ -242,14 +242,6 @@ button:hover svg path {
   color: #fdfcfb;
 }
 
-/* .section1 video {
-  display: flex;
-  max-width: 80%;
-  flex: 0 1 40%;
-  margin-right: 40px;
-  min-width: 190px;
-  border-radius: 15px;
-} */
 
 .sectYou {
   display: flex;
@@ -264,7 +256,7 @@ button:hover svg path {
 }
 
 .video-talleres{
-  width:80vw;
+  width:60vw;
   height:auto;
   margin:auto;
 }
