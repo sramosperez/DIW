@@ -474,6 +474,32 @@ footer {
   font-weight: bold;
 }
 
+
+/*============================*/
+/* ANIMACIONES */
+/*============================*/
+
+nav li a{
+  transition: transform 0.3s ease;
+}
+
+nav li a:hover{
+  transform: scale(1.2); 
+}
+
+.logo{
+  transform: scale(0);            
+  opacity: 0;
+  animation: aparecer 0.7s ease-out forwards;
+}
+@keyframes aparecer {
+  to {
+    transform: scale(1);             
+    opacity: 1;
+  }
+}
+
+
 /*============================*/
 /* MEDIA QUERY PARA ESCRITORIOS PEQUEÑOS */
 /*============================*/
